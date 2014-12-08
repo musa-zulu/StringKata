@@ -5,3 +5,10 @@ F:\StringKataAfterCodeReview\StringKata\StringKata\bin\Debug\nunit.framework.xml
 F:\StringKataAfterCodeReview\StringKata\StringKata\obj\Debug\StringKata.csprojResolveAssemblyReference.cache
 F:\StringKataAfterCodeReview\StringKata\StringKata\obj\Debug\StringKata.dll
 F:\StringKataAfterCodeReview\StringKata\StringKata\obj\Debug\StringKata.pdb
+F:\gitHub\StringKata\StringKata\bin\Debug\StringKata.dll
+F:\gitHub\StringKata\StringKata\bin\Debug\StringKata.pdb
+F:\gitHub\StringKata\StringKata\bin\Debug\nunit.framework.dll
+F:\gitHub\StringKata\StringKata\bin\Debug\nunit.framework.xml
+F:\gitHub\StringKata\StringKata\obj\Debug\StringKata.csprojResolveAssemblyReference.cache
+F:\gitHub\StringKata\StringKata\obj\Debug\StringKata.dll
+F:\gitHub\StringKata\StringKata\obj\Debug\StringKata.pdb

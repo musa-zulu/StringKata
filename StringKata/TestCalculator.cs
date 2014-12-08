@@ -7,199 +7,181 @@ namespace StringKata
     [TestFixture]
     public class TestCalculator
     {
-        // ReSharper disable InconsistentNaming
+     
         [Test]
-        public void Given_EmptyString_ReturnZero()
+        public void Given_EmptyInputString_ShouldReturnZero()
         {
-            //------------------- Set up ---------------------
             const string input = "";
             const int expected = 0;
             var calculator = CreateCalculator();
-            //---------------------Act-------------------------
-            var resuls = calculator.Add(input);
-            //------------------ Assert -----------------------
-            Assert.AreEqual(expected,resuls);
+            var actualResults = calculator.Add(input);
+
+           Assert.AreEqual(expected,actualResults);
+
         }
 
         [Test]
-        public void Given_StringWithASingleValue_ReturnValue()
+        public void Given_InputStringWithSingleValue_ShouldReturnSingleValue()
         {
-            //------------------- Set up ---------------------
             const string input = "1";
             const int expected = 1;
             var calculator = CreateCalculator();
-            //---------------------Act-------------------------
-            var resuls = calculator.Add(input);
-            //------------------ Assert -----------------------
-            Assert.AreEqual(expected, resuls);
+            var actualResults = calculator.Add(input);
+
+            Assert.AreEqual(expected, actualResults);
+
         }
 
         [Test]
-        public void Given_StringWithABigValueLessThanThousand_ReturnBigValueLessThanThousand()
+        public void Given_InputStringWithLargeSingleValue_ShouldReturnLargeSingleValue()
         {
-            //------------------- Set up ---------------------
-            const string input = "111";
-            const int expected = 111;
+            const string input = "865";
+            const int expected = 865;
             var calculator = CreateCalculator();
-            //---------------------Act-------------------------
-            var resuls = calculator.Add(input);
-            //------------------ Assert -----------------------
-            Assert.AreEqual(expected, resuls);
+            var actualResults = calculator.Add(input);
+
+            Assert.AreEqual(expected, actualResults);
         }
 
         [Test]
-        public void Given_StringWithTwoValues_ReturnSum()
+        public void Given_InputStringWithTwoValues_ShouldReturnSum()
         {
-            //------------------- Set up ---------------------
             const string input = "1,2";
             const int expected = 3;
             var calculator = CreateCalculator();
-            //---------------------Act-------------------------
-            var resuls = calculator.Add(input);
-            //------------------ Assert -----------------------
-            Assert.AreEqual(expected, resuls);
+            var actualResults = calculator.Add(input);
+
+            Assert.AreEqual(expected, actualResults);
         }
-        
+
+
+
         [Test]
-        public void Given_StringWithMultipleValues_ReturnSum()
+        public void Given_InputStringWithMayValues_ShouldReturnSum()
         {
-            //------------------- Set up ---------------------
-            const string input = "1,2,3";
-            const int expected = 6;
+            const string input = "1,2,3,5";
+            const int expected = 11;
             var calculator = CreateCalculator();
-            //---------------------Act-------------------------
-            var resuls = calculator.Add(input);
-            //------------------ Assert -----------------------
-            Assert.AreEqual(expected, resuls);
+            var actualResults = calculator.Add(input);
+
+            Assert.AreEqual(expected, actualResults);
         }
 
 
+
         [Test]
-        public void Given_StringWithNewLineInBetweenValues_ReturnSum()
+        public void Given_InputStringWithNewLineInBetweenValues_ShouldReturnSum()
         {
-            //------------------- Set up ---------------------
-            const string input = "1\n2,3";
-            const int expected = 6;
+            const string input = "1\n2,5";
+            const int expected = 8;
             var calculator = CreateCalculator();
-            //---------------------Act-------------------------
-            var resuls = calculator.Add(input);
-            //------------------ Assert -----------------------
-            Assert.AreEqual(expected, resuls);
+            var actualResults = calculator.Add(input);
+
+            Assert.AreEqual(expected, actualResults);
         }
-   
+
+
         [Test]
-        public void Given_StringWithDifferentDelimitersInBetweenValues_ReturnSum()
+        public void Given_InputStringWithANegetiveValue_ShouldThrowException()
         {
-            //------------------- Set up ---------------------
-            const string input = "//;\n1;2";
-            const int expected = 3;
+            const string input = "-1,2,5";
+            const string expected = "negetives not allowed : -1";
             var calculator = CreateCalculator();
-            //---------------------Act-------------------------
-            var resuls = calculator.Add(input);
-            //------------------ Assert -----------------------
-            Assert.AreEqual(expected, resuls);
+            var actualResults = Assert.Throws<ApplicationException>(()=> calculator.Add(input));
+
+            Assert.AreEqual(expected, actualResults.Message);
         }
 
-      
+
         [Test]
-        public void Given_StringWithASingleNegativeValues_ThrowsException()
+        public void Given_InputStringWithNegetiveValues_ShouldThrowException()
         {
-            //------------------- Set up ---------------------
-            const string input = "-1";
-            const string expected = "negatives not allowed : -1";
+            const string input = "-1,2,-5";
+            const string expected = "negetives not allowed : -1,-5";
             var calculator = CreateCalculator();
-            //---------------------Act-------------------------
-            var resuls = Assert.Throws<ApplicationException>(() => calculator.Add(input));
-            //------------------ Assert -----------------------
-            Assert.AreEqual(expected, resuls.Message);
+            var actualResults = Assert.Throws<ApplicationException>(() => calculator.Add(input));
+
+            Assert.AreEqual(expected, actualResults.Message);
         }
 
 
-        [Test]
-        public void Given_StringWithMultipleNegativeValues_ThrowsException()
-        {
-            //------------------- Set up ---------------------
-            const string input = "1,-2,3,-3";
-            const string expected = "negatives not allowed : -2-3";
-            var calculator = CreateCalculator();
-            //---------------------Act-------------------------
-            var resuls = Assert.Throws<ApplicationException>(() => calculator.Add(input));
-            //------------------ Assert -----------------------
-            Assert.AreEqual(expected, resuls.Message);
-        }
-
-        [Test]
-        public void Given_StringWithValuesUpToThousand_ReturnSum()
-        {
-            //------------------- Set up ---------------------
-            const string input = "1000,1";
-            const int expected = 1001;
-            var calculator = CreateCalculator();
-            //---------------------Act-------------------------
-            var resuls = calculator.Add(input);
-            //------------------ Assert -----------------------
-            Assert.AreEqual(expected, resuls);
-        }
 
 
         [Test]
-        public void Given_StringWithValuesGreaterThanThousand_ReturnSum()
+        public void Given_InputStringWithValueGreaterThanThousand_ShouldIgnoreValueReturnSum()
         {
-            //------------------- Set up ---------------------
             const string input = "1001,2";
             const int expected = 2;
             var calculator = CreateCalculator();
-            //---------------------Act-------------------------
-            var resuls = calculator.Add(input);
-            //------------------ Assert -----------------------
-            Assert.AreEqual(expected, resuls);
+            var actualResults =  calculator.Add(input);
+
+            Assert.AreEqual(expected, actualResults);
+        }
+
+
+
+        [Test]
+        public void Given_InputStringWithValueNotGreaterThanThousand_ShouldReturnSum()
+        {
+            const string input = "1000,2";
+            const int expected = 1002;
+            var calculator = CreateCalculator();
+            var actualResults = calculator.Add(input);
+
+            Assert.AreEqual(expected, actualResults);
         }
 
         [Test]
-        public void Given_StringWithDelimitersOfAnyLength_ReturnSum()
+        public void Given_InputStringWithDelimitersBetweenValue_ShouldReturnSum()
         {
-            //------------------- Set up ---------------------
+            const string input = "//;\n1;2";
+            const int expected = 3;
+            var calculator = CreateCalculator();
+            var actualResults = calculator.Add(input);
+
+            Assert.AreEqual(expected, actualResults);
+        }
+
+
+        [Test]
+        public void Given_InputStringWithDelimitersOfAnyLengthBetweenValue_ShouldReturnSum()
+        {
             const string input = "//[***]\n1***2***3";
             const int expected = 6;
             var calculator = CreateCalculator();
-            //---------------------Act-------------------------
-            var resuls = calculator.Add(input);
-            //------------------ Assert -----------------------
-            Assert.AreEqual(expected, resuls);
+            var actualResults = calculator.Add(input);
+
+            Assert.AreEqual(expected, actualResults);
         }
 
 
         [Test]
-        public void Given_StringWithDifferentDelimiters_ReturnSum()
+        public void Given_InputStringWithMultipleDelimitersBetweenValue_ShouldReturnSum()
         {
-            //------------------- Set up ---------------------
-            const string input = "//[*][%]\n1*2%3";
-            const int expected = 6;
+            const string input = "//[*][%]\n2*4%6";
+            const int expected = 12;
             var calculator = CreateCalculator();
-            //---------------------Act-------------------------
-            var resuls = calculator.Add(input);
-            //------------------ Assert -----------------------
-            Assert.AreEqual(expected, resuls);
+            var actualResults = calculator.Add(input);
+
+            Assert.AreEqual(expected, actualResults);
         }
 
 
         [Test]
-        public void Given_StringWithDifferentDelimitersOfAnyLength_ReturnSum()
+        public void Given_InputStringWithMultipleDelimitersOfAnyLengthBetweenValue_ShouldReturnSum()
         {
-            //------------------- Set up ---------------------
-            const string input = "//[*][*%%]\n1%%*2%******3";
-            const int expected = 6;
+            const string input = "//[$&*][%###]\n2$*4%6&&&&&&&&&&*********#8";
+            const int expected = 20;
             var calculator = CreateCalculator();
-            //---------------------Act-------------------------
-            var resuls = calculator.Add(input);
-            //------------------ Assert -----------------------
-            Assert.AreEqual(expected, resuls);
+            var actualResults = calculator.Add(input);
+
+            Assert.AreEqual(expected, actualResults);
         }
+
 
         private static Calculator CreateCalculator()
         {
             return new Calculator();
         }
     }
-
 }
