@@ -1,0 +1,7 @@
+F:\gitHub\Tues 09-12-14\StringKata\StringKata\bin\Debug\StringKata.dll
+F:\gitHub\Tues 09-12-14\StringKata\StringKata\bin\Debug\StringKata.pdb
+F:\gitHub\Tues 09-12-14\StringKata\StringKata\bin\Debug\nunit.framework.dll
+F:\gitHub\Tues 09-12-14\StringKata\StringKata\bin\Debug\nunit.framework.xml
+F:\gitHub\Tues 09-12-14\StringKata\StringKata\obj\Debug\StringKata.csprojResolveAssemblyReference.cache
+F:\gitHub\Tues 09-12-14\StringKata\StringKata\obj\Debug\StringKata.dll
+F:\gitHub\Tues 09-12-14\StringKata\StringKata\obj\Debug\StringKata.pdb
