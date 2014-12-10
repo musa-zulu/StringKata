@@ -1,0 +1,7 @@
+F:\gitHub\Wed 10-12-2014\CalculatorKata\CalculatorKata\bin\Debug\CalculatorKata.dll
+F:\gitHub\Wed 10-12-2014\CalculatorKata\CalculatorKata\bin\Debug\CalculatorKata.pdb
+F:\gitHub\Wed 10-12-2014\CalculatorKata\CalculatorKata\bin\Debug\nunit.framework.dll
+F:\gitHub\Wed 10-12-2014\CalculatorKata\CalculatorKata\bin\Debug\nunit.framework.xml
+F:\gitHub\Wed 10-12-2014\CalculatorKata\CalculatorKata\obj\Debug\CalculatorKata.csprojResolveAssemblyReference.cache
+F:\gitHub\Wed 10-12-2014\CalculatorKata\CalculatorKata\obj\Debug\CalculatorKata.dll
+F:\gitHub\Wed 10-12-2014\CalculatorKata\CalculatorKata\obj\Debug\CalculatorKata.pdb
