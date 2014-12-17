@@ -1,0 +1,14 @@
+F:\gitHub\StringKata\15-12-2014\CalculatorKata\CalculatorKata\obj\Debug\CalculatorKata.csprojResolveAssemblyReference.cache
+F:\gitHub\StringKata\15-12-2014\CalculatorKata\CalculatorKata\bin\Debug\CalculatorKata.dll
+F:\gitHub\StringKata\15-12-2014\CalculatorKata\CalculatorKata\bin\Debug\CalculatorKata.pdb
+F:\gitHub\StringKata\15-12-2014\CalculatorKata\CalculatorKata\bin\Debug\nunit.framework.dll
+F:\gitHub\StringKata\15-12-2014\CalculatorKata\CalculatorKata\bin\Debug\nunit.framework.xml
+F:\gitHub\StringKata\15-12-2014\CalculatorKata\CalculatorKata\obj\Debug\CalculatorKata.dll
+F:\gitHub\StringKata\15-12-2014\CalculatorKata\CalculatorKata\obj\Debug\CalculatorKata.pdb
+F:\gitHub\StringKata\17-12-2014\CalculatorKata\CalculatorKata\bin\Debug\CalculatorKata.dll
+F:\gitHub\StringKata\17-12-2014\CalculatorKata\CalculatorKata\bin\Debug\CalculatorKata.pdb
+F:\gitHub\StringKata\17-12-2014\CalculatorKata\CalculatorKata\bin\Debug\nunit.framework.dll
+F:\gitHub\StringKata\17-12-2014\CalculatorKata\CalculatorKata\bin\Debug\nunit.framework.xml
+F:\gitHub\StringKata\17-12-2014\CalculatorKata\CalculatorKata\obj\Debug\CalculatorKata.csprojResolveAssemblyReference.cache
+F:\gitHub\StringKata\17-12-2014\CalculatorKata\CalculatorKata\obj\Debug\CalculatorKata.dll
+F:\gitHub\StringKata\17-12-2014\CalculatorKata\CalculatorKata\obj\Debug\CalculatorKata.pdb
