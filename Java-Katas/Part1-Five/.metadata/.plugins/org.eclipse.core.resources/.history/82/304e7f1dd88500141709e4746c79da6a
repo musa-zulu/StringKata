@@ -1,0 +1,31 @@
+package stringkata;
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestCalculator {
+
+	@Test
+	public void given_emptyInputString_shouldReturnZero() {
+		Calculator calc = new Calculator();
+		String input = "";
+		int results = calc.add(input);
+		int expected = 0;
+		assertEquals(expected,results);
+	}
+
+	@Test
+	public void given_InputStringWithSingleNumber_shouldReturnNumber() {
+		Calculator calc = new Calculator();
+		int results = calc.add("1");
+		assertEquals(1,results);
+	}
+	
+
+	@Test
+	public void given_InputStringWithTwoNumbers_shouldReturnSum() {
+		Calculator calc = new Calculator();
+		int results = calc.add("1,2");
+		assertEquals(3,results);
+	}
+}

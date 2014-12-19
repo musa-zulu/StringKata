@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestCalculator" project="StringKataCalculator" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="stringkata.TestCalculator" time="0.0">
+    <testcase name="given_emptyInputString_shouldReturnZero" classname="stringkata.TestCalculator" time="0.0"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,26 @@
+package stringkata;
+
+public class Calculator {
+
+	public int add(String numbers) {
+		if (isNullOrEmpty(numbers)) {
+			return defaultValue();
+		}
+		int sum = 0;
+
+		String[] values = numbers.split(",");
+
+		for (String number : values) {
+			sum += Integer.parseInt(number);
+		}
+		return sum;
+	}
+
+	private int defaultValue() {
+		return 0;
+	}
+
+	private boolean isNullOrEmpty(String numbers) {
+		return numbers.isEmpty();
+	}
+}

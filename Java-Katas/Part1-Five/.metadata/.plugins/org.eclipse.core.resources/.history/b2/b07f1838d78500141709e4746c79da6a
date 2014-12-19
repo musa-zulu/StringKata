@@ -1,0 +1,15 @@
+package stringkata;
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestCalculator {
+
+	@Test
+	public void given_emptyInputString_shouldReturnZero() {
+		Calculator calc = new Calculator();
+		int results = calc.add("");
+		assertEquals(results,0);
+	}
+
+}

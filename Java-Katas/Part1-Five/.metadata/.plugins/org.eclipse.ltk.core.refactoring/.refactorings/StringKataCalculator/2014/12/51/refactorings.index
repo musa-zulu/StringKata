@@ -1,0 +1,6 @@
+1418812319677	Extract local variable 'input'
+1418812330247	Extract local variable 'expected'
+1418812419068	Extract method 'isNullOrEmpty'
+1418812439223	Extract method 'defaultValue'
+1418812830348	Extract method 'sumAll'
+1418813280055	Extract method 'Split'

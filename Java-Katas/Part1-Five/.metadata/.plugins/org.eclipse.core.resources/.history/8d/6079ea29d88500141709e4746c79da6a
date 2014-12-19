@@ -1,0 +1,17 @@
+package stringkata;
+
+public class Calculator {
+
+	public int add(String numbers) {
+		if(numbers.isEmpty())
+		{
+			return 0;
+		}
+		
+		if(numbers.contains(",")) {
+			String[] values = numbers.split(",");
+			return Integer.parseInt(values[0]) + Integer.parseInt(values[1]);
+		}
+		return 1;
+	}
+}
