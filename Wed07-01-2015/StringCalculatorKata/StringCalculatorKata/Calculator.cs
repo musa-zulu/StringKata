@@ -23,8 +23,6 @@ namespace StringCalculatorKata
             return SumAll(numbers);
         }
 
-
-
         private static string GetInputAndDelimiters(string input, ref string delimiters)
         {
             var index = input.IndexOf("\n");
