@@ -18,7 +18,7 @@ namespace StringKataCalculator
                 input = GetNumbersAndDelimiters(input, ref delimiters);
             }
             var enumerable = GetNumbersAndSplitDelimiter(input, delimiters);
-           
+
             return SumAll(enumerable);
         }
 
