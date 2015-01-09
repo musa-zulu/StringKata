@@ -1,0 +1,7 @@
+F:\StringKata\Fri09-01-2015\TestCalculator\TestCalculator\bin\Debug\TestCalculator.dll
+F:\StringKata\Fri09-01-2015\TestCalculator\TestCalculator\bin\Debug\TestCalculator.pdb
+F:\StringKata\Fri09-01-2015\TestCalculator\TestCalculator\bin\Debug\nunit.framework.dll
+F:\StringKata\Fri09-01-2015\TestCalculator\TestCalculator\bin\Debug\nunit.framework.xml
+F:\StringKata\Fri09-01-2015\TestCalculator\TestCalculator\obj\Debug\TestCalculator.csprojResolveAssemblyReference.cache
+F:\StringKata\Fri09-01-2015\TestCalculator\TestCalculator\obj\Debug\TestCalculator.dll
+F:\StringKata\Fri09-01-2015\TestCalculator\TestCalculator\obj\Debug\TestCalculator.pdb
