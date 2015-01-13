@@ -1,0 +1,7 @@
+F:\StringKata\Tue2015-01-13\StringKata\StringKata\bin\Debug\StringKata.dll
+F:\StringKata\Tue2015-01-13\StringKata\StringKata\bin\Debug\StringKata.pdb
+F:\StringKata\Tue2015-01-13\StringKata\StringKata\bin\Debug\nunit.framework.dll
+F:\StringKata\Tue2015-01-13\StringKata\StringKata\bin\Debug\nunit.framework.xml
+F:\StringKata\Tue2015-01-13\StringKata\StringKata\obj\Debug\StringKata.csprojResolveAssemblyReference.cache
+F:\StringKata\Tue2015-01-13\StringKata\StringKata\obj\Debug\StringKata.dll
+F:\StringKata\Tue2015-01-13\StringKata\StringKata\obj\Debug\StringKata.pdb
