@@ -1,0 +1,7 @@
+F:\StringKata\Wed14-01-2015\StrigKataCalculator\StrigKataCalculator\bin\Debug\StrigKataCalculator.dll
+F:\StringKata\Wed14-01-2015\StrigKataCalculator\StrigKataCalculator\bin\Debug\StrigKataCalculator.pdb
+F:\StringKata\Wed14-01-2015\StrigKataCalculator\StrigKataCalculator\bin\Debug\nunit.framework.dll
+F:\StringKata\Wed14-01-2015\StrigKataCalculator\StrigKataCalculator\bin\Debug\nunit.framework.xml
+F:\StringKata\Wed14-01-2015\StrigKataCalculator\StrigKataCalculator\obj\Debug\StrigKataCalculator.csprojResolveAssemblyReference.cache
+F:\StringKata\Wed14-01-2015\StrigKataCalculator\StrigKataCalculator\obj\Debug\StrigKataCalculator.dll
+F:\StringKata\Wed14-01-2015\StrigKataCalculator\StrigKataCalculator\obj\Debug\StrigKataCalculator.pdb
