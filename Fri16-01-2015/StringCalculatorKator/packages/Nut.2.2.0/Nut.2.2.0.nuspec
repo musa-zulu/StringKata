@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Nut</id>
+    <version>2.2.0</version>
+    <title>Nut - Number To Text</title>
+    <authors>Emrah Yumuk</authors>
+    <owners>Emrah Yumuk</owners>
+    <licenseUrl>http://opensource.org/licenses/ms-pl.html</licenseUrl>
+    <projectUrl>https://github.com/emrahyumuk/NUT-number-to-text</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Number To Text Converter
+Money To Text Converter
+
+Supported Languages: English, French, Russian, Spanish, Turkish.
+
+Supported Currencies: EUR, USD, RUB, TRY
+
+Number Limit: 1 trillion</description>
+    <summary>Number To Text Converter
+Money To Text Converter
+
+Supported Languages: English, French, Russian, Spanish, Turkish.
+
+Supported Currencies: EUR, USD, RUB, TRY
+
+Number Limit: 1 trillion</summary>
+    <releaseNotes>-includeDecimalZero support added</releaseNotes>
+    <copyright>©  2014</copyright>
+    <tags>number text word money english french turkish spanish russian currency try usd euro rub number to money currency int decimal word</tags>
+  </metadata>
+</package>

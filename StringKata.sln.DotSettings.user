@@ -2,4 +2,5 @@
 	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=E38AB014AFB24BFEA25FF135456CF757/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=E38AB014AFB24BFEA25FF135456CF757/Name/@EntryValue">All Tests in StringKata</s:String>
 	
+	
 	<s:String x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=E38AB014AFB24BFEA25FF135456CF757/XmlSerializedElements/@EntryValue">&lt;Session&gt;&lt;Elements /&gt;&lt;/Session&gt;</s:String></wpf:ResourceDictionary>
