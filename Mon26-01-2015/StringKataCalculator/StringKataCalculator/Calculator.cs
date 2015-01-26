@@ -1,8 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
-using NUnit.Framework.Constraints;
 
 namespace StringKataCalculator
 {
@@ -12,25 +11,19 @@ namespace StringKataCalculator
         {
             if (IsNullOrEmpty(input))
             {
-                return DefaultValue();
+                return DefaultValues();
             }
             var delimiters = DefaultDelimiters();
+
             if (HasCustormDelimiters(input))
             {
                 input = GetValues(input, ref delimiters);
             }
+
+
             var numbers = Split(input, delimiters);
-            return SumAll(numbers);  //select all integers and discard empty strings
-        }
 
-        private static string DefaultDelimiters()
-        {
-            return ",\n";
-        }
-
-        private static bool HasCustormDelimiters(string input)
-        {
-            return input.StartsWith("//");
+            return SumAll(numbers);
         }
 
         private static string GetValues(string input, ref string delimiters)
@@ -41,12 +34,22 @@ namespace StringKataCalculator
             return input;
         }
 
+        private static string DefaultDelimiters()
+        {
+            return "\n,";
+        }
+
+        private static bool HasCustormDelimiters(string input)
+        {
+            return input.StartsWith("//");
+        }
+
         private static bool IsNullOrEmpty(string input)
         {
             return string.IsNullOrEmpty(input);
         }
 
-        private static int DefaultValue()
+        private static int DefaultValues()
         {
             return 0;
         }
@@ -60,32 +63,17 @@ namespace StringKataCalculator
         {
             CheckNegative(numbers);
 
-            return numbers.Where(number => !IsEmpty(number) && IsInRange(number)).Sum(number => int.Parse(number));
-        }
-
-        private static bool IsInRange(string number)
-        {
-            return int.Parse(number) <= 1000;
-        }
-
-        private static bool IsEmpty(string number)
-        {
-            return number.Length == 0;
+            return numbers.Where(number => number.Length != 0 && int.Parse(number) <= 1000).Sum(number => int.Parse(number));
         }
 
         private static void CheckNegative(IEnumerable<string> numbers)
         {
-            var negatives = numbers.Where(number => !IsEmpty(number) && IsNegative(number)).ToList();
+            var negatives = numbers.Where(number => number.Length != 0 && int.Parse(number) < 0).ToList();
 
             if (negatives.Count > 0)
             {
-                throw new ApplicationException("negatives not allowed : " + string.Join(",", negatives));
+                throw new ApplicationException("negatives are not allowed  : "+string.Join(",",negatives));
             }
-        }
-
-        private static bool IsNegative(string number)
-        {
-            return int.Parse(number) < 0;
         }
     }
 }
