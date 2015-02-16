@@ -1,0 +1,7 @@
+# first entry always the solution dll
+# second entry always the solution name
+# third entry always the solution dll name
+# directory structure must remain as MasterSolution, PlayerSolution
+Katarai.KataData.StringCalculator.dll
+PlayerStringKata.sln
+PlayerStringKata.dll
