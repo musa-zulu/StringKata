@@ -1,0 +1,14 @@
+/*directory structure must remain as MasterSolution, PlayerSolution*/
+{
+"masterSolutionAssembly":"Katarai.KataData.StringCalculator.dll",
+"playerSolutionName":"PlayerStringKata.sln",
+"playerSolutionAssembly":"PlayerStringKata.dll",
+"kataName":"String Calculator",
+"instructions":{
+		"header":"Welcome, let's start the kata. Please kindly note the following:",
+		"content":[
+			"Do not use test cases.",
+			"Please READ the instructions as they are slightly different from what you may have previously encountered."
+		]
+	}
+}
