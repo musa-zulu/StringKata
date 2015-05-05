@@ -8,7 +8,10 @@ namespace StringCalculator
     {
         public int Add(string input)
         {
-            if (string.IsNullOrEmpty(input)) return 0;
+            if (string.IsNullOrEmpty(input))
+            {
+                return 0;
+            }
 
             var delimiter = GetDelimiters(ref input);
 
